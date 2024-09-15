@@ -96,10 +96,10 @@ async function run() {
     })
     // get a single apartment data from db using _id 
     app.get('/apartment/:id', async (req, res) => {
-      const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
-      const result = await roomsCollection.findOne(query);
-      res.send(result);
+      const id = req.params.id
+      const query = { _id: new ObjectId(id) }
+      const result = await roomsCollection.findOne(query)
+      res.send(result)
     })
 
 
